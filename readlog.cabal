@@ -1,0 +1,89 @@
+cabal-version: 2.2
+
+-- This file has been generated from package.yaml by hpack version 0.38.1.
+--
+-- see: https://github.com/sol/hpack
+
+name:           readlog
+version:        0.1.0.0
+author:         Davi
+maintainer:     Davi
+copyright:      2026 Davi
+license:        BSD-3-Clause
+build-type:     Simple
+
+library
+  exposed-modules:
+      Functions
+      APICalls
+      DBAccess
+  other-modules:
+      Paths_readlog
+  autogen-modules:
+      Paths_readlog
+  hs-source-dirs:
+      src
+  ghc-options: -Wall
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , bytestring
+    , http-conduit
+    , http-types
+    , postgresql-simple
+    , scotty
+    , text
+    , time
+    , wai-extra
+    , wai-middleware-static
+  default-language: Haskell2010
+
+executable readlog-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_readlog
+  autogen-modules:
+      Paths_readlog
+  hs-source-dirs:
+      app
+  ghc-options: -Wall
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , bytestring
+    , http-conduit
+    , http-types
+    , postgresql-simple
+    , readlog
+    , scotty
+    , text
+    , time
+    , wai-extra
+    , wai-middleware-static
+  default-language: Haskell2010
+
+test-suite readlog-test
+  type: exitcode-stdio-1.0
+  main-is: Test.hs
+  other-modules:
+      Paths_readlog
+  autogen-modules:
+      Paths_readlog
+  hs-source-dirs:
+      teste_unitario
+  ghc-options: -Wall
+  build-depends:
+      HUnit
+    , aeson
+    , base >=4.7 && <5
+    , bytestring
+    , http-conduit
+    , http-types
+    , postgresql-simple
+    , readlog
+    , scotty
+    , text
+    , time
+    , wai-extra
+    , wai-middleware-static
+  default-language: Haskell2010

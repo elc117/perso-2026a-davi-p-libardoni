@@ -1,0 +1,44 @@
+name: readlog
+version: 0.1.0.0
+license: BSD-3-Clause
+author: Davi
+maintainer: Davi
+copyright: 2026 Davi
+
+dependencies:
+  - base >= 4.7 && < 5
+  - time
+  - postgresql-simple
+  - scotty
+  - wai-extra
+  - wai-middleware-static
+  - text
+  - aeson
+  - http-conduit
+  - http-types
+  - bytestring
+
+library:
+  source-dirs: src
+  exposed-modules:
+    - Functions
+    - APICalls
+    - DBAccess
+  ghc-options: -Wall
+
+executables:
+  readlog-exe:
+    main: Main.hs
+    source-dirs: app
+    dependencies:
+      - readlog
+    ghc-options: -Wall
+
+tests:
+  readlog-test:
+    main: Test.hs
+    source-dirs: teste_unitario
+    dependencies:
+      - readlog
+      - HUnit
+    ghc-options: -Wall
