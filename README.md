@@ -1,13 +1,7 @@
 # Backend Web com Haskell+Scotty
 
-
-- Estrutura e conteúdo do README:
-
-
-  3. Processo de desenvolvimento: comentários pessoais sobre o desenvolvimento, com evidências de compreensão, incluindo versões com erros e tentativas de solução
-  4. Orientações para execução: instalação de dependências, etc.
-  5. Resultado final: demonstrar execução em GIF animado ou vídeo curto (máximo 60s)
-  6. Referências e créditos (incluindo alguns prompts, se aplicável)
+COMMIT HISTORY ESTÁ NO REPOSITÓRIO A SEGUIR:
+https://github.com/davi-p-libardoni/readLog
 
 ## 1. Identificação
 
