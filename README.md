@@ -21,7 +21,7 @@ A programação funcional realiza o trabalho de filtragem, ordenação e acumula
 
 Ao longo do processo de desenvolvimento, tive que dar uma reduzida no meu escopo inicial. Percebi que algumas funcionalidades que eu havia planejado seriam muito difíceis de implementar, e tive que simplificar. Por exemplo, a estatística de "páginas lidas por mês" tive que fazer de maneira bem simplificada, conta todas as páginas do livro no mês em que foi completo.
 Outra dificuldade que tive foi com a passagem de dados do backend (haskell) pro frontend (html), com conversões do meu tipo de dados Book do haskell para objeto JSON, e conversões de linhas do banco de dados para esse meu tipo Book também foram difíceis.
-Funções puras que usei muito foram filter, map, e funções específicas da biblioteca de tempo do haskell, como toGregorian, para lidar com datas, além de sortBy, função de ordenação de listas. Também utilizei pattern matching para 
+Funções puras que usei muito foram filter, map, e funções específicas da biblioteca de tempo do haskell, como toGregorian, para lidar com datas, além de sortBy, função de ordenação de listas. Também utilizei pattern matching para extrair dados como ano e mês do campo data.
 
 Comecei o desenvolvimento pelas funções puras, depois fazendo o arquivo de testes. De início, tentei fazer deploy no render cedo, porém não consegui pois a cada erro de compilação eu perdia 5 minutos esperando o Render acusar o erro. Então decidi implementar todo o projeto localmente primeiro, pra depois tentar o deploy, e essa estratégia funcionou.
 Depois, pelo Render, criei um banco de dados PostgreSQL para o armazenamento dos livros lidos, e criei uma chave de API do Google Books para buscar os livros por nome.
